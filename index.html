@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ujjwal Arora</title>
+  <meta name="description" content="Ujjwal Arora — personal page.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231f6f5c'/><text x='50' y='66' font-size='48' font-family='Georgia,serif' text-anchor='middle' fill='white'>UA</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --text: #1c1b19;
+      --muted: #67635c;
+      --line: #e4dfd6;
+      --accent: #1f6f5c;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141413;
+        --text: #ece9e3;
+        --muted: #9d988f;
+        --line: #2d2b28;
+        --accent: #6cc3a9;
+        --card: #1c1b19;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font: 400 17px/1.65 Inter, system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 96px 20px 64px;
+    }
+    .avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--accent);
+      color: var(--bg);
+      font: 600 26px Fraunces, Georgia, serif;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font: 600 clamp(36px, 7vw, 48px)/1.1 Fraunces, Georgia, serif;
+      letter-spacing: -0.02em;
+    }
+    .tagline { color: var(--muted); font-size: 19px; margin-top: 10px; }
+    section { margin-top: 56px; }
+    h2 {
+      font: 500 13px Inter, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    p + p { margin-top: 14px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .links a {
+      text-decoration: none;
+      color: var(--text);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: border-color .15s, color .15s;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    ul.items { list-style: none; padding: 0; border-top: 1px solid var(--line); }
+    ul.items li {
+      display: flex; justify-content: space-between; gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    ul.items .what { font-weight: 500; }
+    ul.items .when { color: var(--muted); white-space: nowrap; font-size: 15px; }
+    footer {
+      margin-top: 72px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- TODO: replace everything marked [ ] with your own details -->
+    <div class="avatar" aria-hidden="true">UA</div>
+    <h1>Ujjwal Arora</h1>
+    <p class="tagline">[What you do, in one line, e.g. "Software engineer in City"]</p>
+
+    <section>
+      <h2>About</h2>
+      <p>[A few sentences about yourself: what you work on, what you care about, what you're up to right now.]</p>
+      <p>[Optional second paragraph: interests outside work, side projects, etc.]</p>
+    </section>
+
+    <section>
+      <h2>Now</h2>
+      <ul class="items">
+        <li><span class="what">[Current role or project]</span><span class="when">[2025–now]</span></li>
+        <li><span class="what">[Previous role or project]</span><span class="when">[2022–2025]</span></li>
+        <li><span class="what">[Education or another highlight]</span><span class="when">[Year]</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Elsewhere</h2>
+      <div class="links">
+        <a href="mailto:hello@aroraujjwal7.com">Email</a>
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>© <span id="y">2026</span> Ujjwal Arora</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
