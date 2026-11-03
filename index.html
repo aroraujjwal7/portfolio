@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ujjwal Arora</title>
-  <meta name="description" content="Ujjwal Arora — personal page.">
+  <meta name="description" content="Ujjwal Arora: software engineer at Amazon building large-scale distributed systems.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231f6f5c'/><text x='50' y='66' font-size='48' font-family='Georgia,serif' text-anchor='middle' fill='white'>UA</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,7 +84,17 @@
       border-bottom: 1px solid var(--line);
     }
     ul.items .what { font-weight: 500; }
+    ul.items .sub { display: block; color: var(--muted); font-size: 15px; font-weight: 400; margin-top: 2px; }
     ul.items .when { color: var(--muted); white-space: nowrap; font-size: 15px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skills span {
+      font-size: 14px;
+      padding: 4px 12px;
+      border-radius: 6px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      color: var(--muted);
+    }
     footer {
       margin-top: 72px;
       color: var(--muted);
@@ -94,32 +104,49 @@
 </head>
 <body>
   <main>
-    <!-- TODO: replace everything marked [ ] with your own details -->
     <div class="avatar" aria-hidden="true">UA</div>
     <h1>Ujjwal Arora</h1>
-    <p class="tagline">[What you do, in one line, e.g. "Software engineer in City"]</p>
+    <p class="tagline">Software engineer at Amazon, building large-scale distributed systems. Based in Austin, TX.</p>
 
     <section>
       <h2>About</h2>
-      <p>[A few sentences about yourself: what you work on, what you care about, what you're up to right now.]</p>
-      <p>[Optional second paragraph: interests outside work, side projects, etc.]</p>
+      <p>I've spent 5+ years designing, building and scaling Tier-1 backend systems at Amazon, PayPal and SAP. My work centers on AWS microservices, event-driven architectures and high-availability services. I care most about making systems more reliable, more scalable and cheaper to run.</p>
+      <p>Recently, I launched a service on ECS Fargate that handles 700+ TPS for 100,000+ daily users at 99.95% availability. I also re-architected a planning service onto ECS + SQS, which tripled its peak-load capacity.</p>
     </section>
 
     <section>
-      <h2>Now</h2>
+      <h2>Experience</h2>
       <ul class="items">
-        <li><span class="what">[Current role or project]</span><span class="when">[2025–now]</span></li>
-        <li><span class="what">[Previous role or project]</span><span class="when">[2022–2025]</span></li>
-        <li><span class="what">[Education or another highlight]</span><span class="when">[Year]</span></li>
+        <li><span class="what">Amazon<span class="sub">Software Development Engineer II · Austin, TX</span></span><span class="when">2021–now</span></li>
+        <li><span class="what">PayPal<span class="sub">Software Developer · Austin, TX</span></span><span class="when">2021</span></li>
+        <li><span class="what">SAP<span class="sub">Software Developer · Bengaluru, India</span></span><span class="when">2016–2019</span></li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="items">
+        <li><span class="what">Trine University<span class="sub">MBA</span></span></li>
+        <li><span class="what">Stony Brook University<span class="sub">MS, Computer Science</span></span></li>
+        <li><span class="what">Punjab Engineering College<span class="sub">BE, Computer Science</span></span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Java</span><span>Kotlin</span><span>Python</span><span>C++</span><span>JavaScript</span>
+        <span>AWS</span><span>ECS / Fargate</span><span>Lambda</span><span>DynamoDB</span><span>SQS</span>
+        <span>Microservices</span><span>Spark</span><span>SQL</span><span>React</span><span>Docker</span>
+      </div>
     </section>
 
     <section>
       <h2>Elsewhere</h2>
       <div class="links">
-        <a href="mailto:hello@aroraujjwal7.com">Email</a>
-        <a href="https://github.com/">GitHub</a>
-        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="mailto:aroraujjwal7@gmail.com">Email</a>
+        <a href="https://github.com/aroraujjwal7">GitHub</a>
+        <a href="https://www.linkedin.com/in/aroraujjwal7/">LinkedIn</a>
       </div>
     </section>
 
